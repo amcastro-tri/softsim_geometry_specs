@@ -51,17 +51,19 @@
 {\todo[caption={#2}, #1]
 	{\begin{spacing}{0.5}#2\end{spacing}}}
 
-\newcommand{\ShermComment}[2][]{\smalltodo[color=blue!40, author=Sherm, 
+\newcommand{\AlejandroComment}[2][]{\smalltodo[color=purple!40,
+author=Alejandro, #1]{#2}{}}
+	
+\newcommand{\ShermComment}[2][]{\smalltodo[color=blue!40, author=Sherm,
 #1]{#2}{}}
-
-\newcommand{\EvanComment}[2][]{\smalltodo[color=green!40, author=Evan, 
-	#1]{#2}{}}
-
-\newcommand{\SeanComment}[2][]{\smalltodo[color=cyan!40, author=Sean, 
-	#1]{#2}{}}
-
-\newcommand{\PaulComment}[2][]{\smalltodo[color=magenta!40, author=Paul, 
-	#1]{#2}{}}
+	
+\newcommand{\XuchenComment}[2][]{\smalltodo[color=green!40, author=Xuchen,
+		#1]{#2}{}}
+	
+\newcommand{\SeanComment}[2][]{\smalltodo[color=cyan!40, author=Sean, #1]{#2}{}}
+	
+\newcommand{\DamrongComment}[2][]{\smalltodo[color=magenta!40, author=Damrong,
+		#1]{#2}{}}
 
 \title{SoftSim Geometric Query Specifications} 
 
@@ -77,6 +79,7 @@
 \section{Introduction}
 
 The purpose of this document is to describe a practical geometry query to be
+\AlejandroComment{A comment with my name and fav color}
 used in the simulation of soft bodies with contact. There is a large variety of
 mathematical formulations with strong foundations in the FEM community. While
 the Mortar method seems to be a standard in the FEM community
